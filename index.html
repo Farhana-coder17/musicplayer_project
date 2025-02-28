@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="media-player">
+        <h2>Media Player</h2>
+
+        <!-- Video Element -->
+        <video id="video" width="100%" controls hidden></video>
+        
+        <!-- Audio Element -->
+        <audio id="audio"></audio>
+        
+        <div class="media-info">
+            <p id="media-title">Select a file</p>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="next">⏭</button>
+            <button id="toggle-media">Switch to Video</button>
+        </div>
+
+        <!-- Progress & Volume Controls -->
+        <input type="range" id="progress" value="0">
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+
+        <!-- Playlist -->
+        <div class="playlist">
+            <h3>Available Media</h3>
+            <ul id="playlist"></ul>
+        </div>
+
+        <!-- Played Media History -->
+        <div class="history">
+            <h3>Played Media History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+}
+
+.media-player {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.media-player:hover {
+    transform: scale(1.05);
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.controls button {
+    font-size: 16px;
+    margin: 8px;
+    padding: 8px 12px;
+    border: none;
+    background:rgb(182, 17, 236);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: #764ba2;
+}
+
+#progress, #volume {
+    width: 100%;
+    margin-top: 10px;
+    appearance: none;
+    height: 5px;
+    background:rgb(148, 94, 143);
+    border-radius: 5px;
+}
+
+.playlist, .history {
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.playlist h3, .history h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.playlist ul, .history ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.playlist li, .history li {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+.playlist li:last-child, .history li:last-child {
+    border-bottom: none;
+}
+
+.playlist li:hover, .history li:hover {
+    background: #f3f3f3;
+}
